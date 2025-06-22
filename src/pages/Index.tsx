@@ -10,6 +10,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight, Wifi, Utensils, Waves, LifeBuoy, MapPin, Coffee } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
  
+
 const featuredApartments: ApartmentProps[] = [
   {
     id: "1",
