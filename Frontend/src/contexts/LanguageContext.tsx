@@ -13,7 +13,7 @@ interface LanguageContextType {
 
 const translations: Record<string, Translations> = {
   en,
-  it
+  it,
 };
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);

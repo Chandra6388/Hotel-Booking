@@ -54,7 +54,6 @@ export default function Index() {
     window.scrollTo(0, 0);
   }, []);
   
-  // Feature items
   const features = [
     {
       icon: <Waves className="h-8 w-8 text-primary" />,
