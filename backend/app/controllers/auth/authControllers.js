@@ -57,8 +57,7 @@ class Auth {
             username,
             email,
             password: hashedPassword,
-            phone,
-            role: role || "USER",
+            phone
         });
 
         try {
