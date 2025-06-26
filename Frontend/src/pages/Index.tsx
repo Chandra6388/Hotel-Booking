@@ -115,6 +115,11 @@ export default function Index() {
       <Navbar />
       
 
+
+
+
+
+
       
       <main className="flex-1">
         <HeroSection />
