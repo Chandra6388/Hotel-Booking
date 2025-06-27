@@ -11,7 +11,6 @@ import { ArrowRight, Wifi, Utensils, Waves, LifeBuoy, MapPin, Coffee } from "luc
 import { useLanguage } from "@/contexts/LanguageContext";
 import {getAllApartments} from "@/service/apartmentsService";
  
-
 const featuredApartments: ApartmentProps[] = [
   {
     id: "1",
@@ -52,7 +51,6 @@ export default function Index() {
   const [featuredApartments, setFeaturedApartments] = useState<ApartmentProps[]>([]);
   const { t } = useLanguage();
   
-  console.log("Language:", t);
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -110,7 +108,7 @@ export default function Index() {
     }
   ];
   
-  
+
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
