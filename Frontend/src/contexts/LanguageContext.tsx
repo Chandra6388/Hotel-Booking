@@ -11,12 +11,10 @@ interface LanguageContextType {
   t: Translations;
 }
 
-const translations: Record<string, Translations> = {
-  en,
-  it,
-};
+const translations: Record<string, Translations> = {en,it,};
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
+ 
 
 export const LanguageProvider = ({ children }: { children: ReactNode }) => {
   const [language, setLanguage] = useState('en');
@@ -37,6 +35,9 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
       localStorage.setItem('language', lang);
     }
   };
+
+
+  
 
   return (
     <LanguageContext.Provider value={{ language, setLanguage: changeLanguage, t }}>
