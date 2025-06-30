@@ -35,8 +35,6 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
       localStorage.setItem('language', lang);
     }
   };
-
-
   
 
   return (
